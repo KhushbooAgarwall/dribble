@@ -259,3 +259,214 @@ body{
 .box:hover{
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.486);
 }
+#page2 button{
+    padding: .8vw .9vw;
+    font-weight: 750;
+    background-color: #fff;
+    color: #000;
+    font-size: .8vw;
+    border: 1px solid #000;
+    border-radius: 1.5vw;
+    margin: 1.5vw 0vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page3{
+    height: fit-content;
+    width: 100%;
+    /* background-color: rgba(255, 217, 0, 0.548); */
+    background-color: rgb(155, 243, 214);
+    padding: 1vw 0vw;
+    /* margin: 2vw 0; */
+}
+
+#page3 h1{
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    font-weight: 500;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    font-family: "Source Serif 4";
+}
+#page3 h4{
+    font-size: .9vw;
+    font-weight: 500;
+    line-height: 2vw;
+    margin: 1.5vw 0vw;
+    text-align: center;
+}
+#page3 #btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+    gap: 1vw;
+    margin-bottom: 2vw;
+}
+#btn button{
+    padding: .8vw .9vw;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    font-size: .8vw;
+    border: none;
+    border-radius: 1.5vw;
+    margin: .7vw 0vw;
+    position: relative;
+}
+#btn button:nth-last-child(1){
+    background-color: #fff;
+    color: #000;
+}
+#page3 #link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5vw;
+    margin-bottom: 5vw;
+}
+#link h3{
+    width: fit-content;
+    font-weight: 100;
+    font-size: .9vw;
+}
+#link a{
+    color: #000;
+    font-weight: 100;
+    font-size: .9vw;
+}
+#page4{
+    height: 35%;
+    width: 100%;
+    padding: 2vw 0vw;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+}
+#page4::-webkit-scrollbar{
+    display: none;    
+}
+.categories{
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    padding: .5vw 0vw;
+    margin-right: 13px;
+    /* animation-name: move; */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.image{
+    height: 90%;
+    width: 100%;
+    border-radius: .5vw;
+    overflow: hidden;
+    box-shadow: 5px -4px 0px rgba(90, 138, 122, 0.212);
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 17px));
+    }
+     /* 0%{
+        right: 0;
+     }
+     100%{
+        right: calc(100% - 30px);
+     } */
+}
+
+.categories h5{
+    font-size: .9vw;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-top: .9vw;
+    padding-left: .2vw;
+    /* position: absolute; */
+    /* bottom: -40px; */
+}
+
+ footer{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 3vw 5vw;
+    /* background-color: aquamarine; */
+ }
+ #footer-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ #top-left{
+    width: 15%;
+ }
+ #top-left img{
+    height: 2.5vw;
+ }
+ #top-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5vw;
+ }
+ #top-center h4{
+    font-size: 1vw;
+    font-weight: 600;
+    letter-spacing: .1px;
+ }
+ #top-right{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1vw;
+ }
+ #top-right i{
+    font-size: 1.5vw;
+ }
+ #footer-bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ #bottom-left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1vw;
+ }
+ #bottom-left h4{
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: .1px;
+    color: gray;
+ }
+ #bottom-right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1vw;
+ }
+ #bottom-right h4{
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: .1px;
+    color: gray;
+ }
