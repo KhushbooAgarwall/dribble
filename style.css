@@ -108,20 +108,21 @@ body{
     transform: translateX(-50%);
 }
 #content-bottom{
-    /* height: calc(100% - 47%); */
-    height: 100%;
     /* background-color: red; */
-    padding: .5vw 0vw;
+    padding: 0vw 0vw;
+    margin: 2.5vw 0vw;
+    /* overflow: hidden; */
+    height: 100%;
+    width: 100%;
+    padding: 1vw;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    margin: 2.5vw 0vw;
     position: relative;
-    /* overflow: hidden; */
 }
-#content-bottom::-webkit-scrollbar{
+/* #content-bottom::-webkit-scrollbar{
     display: none;    
-}
+} */
 .elem{
     display: inline-block;
     height: 100%;
@@ -132,32 +133,34 @@ body{
     border-radius: 1vw;
     position: relative;
     overflow: hidden;
-    /* animation-name: scroll;
+    /* animation-name: scroll; */
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; */
+    animation-timing-function: linear;
 }
 .elem img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     /* display: none; */
+    margin-right: .7vw;
 }
 .elem video{
+    margin-right: .7vw;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
-    /* display: none; */
+}
+.elem:nth-last-child(3) video{
+    object-position: 10% 100%;
 }
 @keyframes scroll {
-    /* from{
-        transform: translateX(0);
+    from{
+        transform: translateX(100%);
     }
     to{
-        transform: translateX(calc(-100% - 17px));
-    } */
+        transform: translateX(calc(-100%));
+    }
      /* 0%{
         right: 0;
      }
@@ -209,13 +212,13 @@ body{
     margin-bottom: 2vw;
 }
 .box{
-    height: 278px;
-    width: 278px;
+    height: 17vw;
+    width: 21vw;
     background-color: red;
     border-radius: 10px;
     overflow: hidden;
     display: inline-block;
-    margin: 1.5vw;
+    margin: 1.1vw;
     position: relative;
     transition: all ease .5s;
 }
@@ -230,7 +233,7 @@ body{
     object-fit: cover;
 }
 .box-bottom{
-    height: 40%;
+    height: 35%;
     width: 100%;
     position: absolute;
     bottom: -40%;
@@ -248,10 +251,12 @@ body{
     padding: .6vw .5vw;
     font-size: 1vw;
     border-radius: 50%;
-    margin-left: .5vw;
+    margin-left: .6vw;
 }
 .box-bottom h5{
+    width: 90%;
     font-size: .9vw;
+    line-height: 1.2vw;
 }
 .box:hover .box-bottom{
     bottom: 0;
@@ -359,6 +364,7 @@ body{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-play-state: paused;
 }
 .image{
     height: 90%;
