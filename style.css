@@ -352,7 +352,7 @@ body{
     position: relative;
 }
 #page4::-webkit-scrollbar{
-    display: none;    
+    /* display: none;     */
 }
 .categories{
     display: inline-block;
