@@ -214,7 +214,6 @@ body{
 .box{
     height: 17vw;
     width: 21vw;
-    background-color: red;
     border-radius: 10px;
     overflow: hidden;
     display: inline-block;
